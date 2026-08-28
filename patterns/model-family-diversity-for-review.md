@@ -8,7 +8,7 @@ When AI-generated code is reviewed by another AI agent, the reviewing agent must
 
 1. **Assign implementation agents to one model family.** The agents that write code, generate tests, and produce deliverables all use models from the same family (e.g., Claude).
 
-2. **Assign the review agent to a different model family.** The agent that assesses implementation quality uses a model from a different provider (e.g., GPT, Gemini). This ensures genuinely different perspectives on code quality, security, and correctness.
+2. **Assign the review agent to a different model family.** The agent that assesses implementation quality uses a model from a different provider (e.g., GPT, Gemini). This is intended to introduce a more independent perspective on code quality, security, and correctness.
 
 3. **Isolate scarce or expensive models behind escalation-only agents.** If a powerful model is too expensive for routine use, define an escalation agent that:
    - Is read-only (no file edits, no command execution, no subagent spawning)
