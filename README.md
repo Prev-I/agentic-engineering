@@ -1,4 +1,12 @@
-# agentic-engineering
+# Agentic Engineering
+
+<p align="center">
+  <img
+    src="docs/images/social-preview.png"
+    alt="Agentic Engineering — Patterns, Decisions and Compositions"
+    width="100%"
+  />
+</p>
 
 Patterns, decisions and minimal examples for governed, spec-driven, multi-harness agentic software engineering.
 
