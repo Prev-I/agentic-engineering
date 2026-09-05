@@ -1,0 +1,15 @@
+# This repository's integration policy. Documentation only, single maintainer,
+# no review gate: commits land directly on the stable branch.
+#
+# The stable branch is named main and takes direct commits. That pairing is the
+# reason the format keeps branch naming and integration mechanism apart.
+#
+# Format: https://github.com/Prev-I/agentic-dev-toolkit/tree/main/repository-policy
+version: 1
+
+branching:
+  workflow: trunk
+  stableBranch: main
+
+integration:
+  mode: direct
