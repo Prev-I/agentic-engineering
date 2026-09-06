@@ -19,7 +19,7 @@ The organizing model is:
 **Tool** → **Decision** → **Pattern** → **Composition** → **Example**
 
 - **Tools** document external building blocks and their relevant properties.
-- **Decisions** record architectural choices using the MADR format, with context, alternatives, and consequences.
+- **Decisions** record architectural choices as short ADRs: status, context, decision, and consequences.
 - **Patterns** describe reusable approaches: how they work and when to apply them.
 - **Compositions** show how multiple patterns work together to form a coherent workflow.
 - **Examples** are minimal, neutral artifacts that demonstrate a concept without requiring project-specific context.
@@ -29,7 +29,7 @@ The organizing model is:
 ```text
 agentic-engineering/
 ├── tools/               # Tool assessments (OpenSpec, Superpowers, OpenCode, Claude Code, Codex)
-├── decisions/           # MADR-style architectural decision records
+├── decisions/           # Architectural decision records
 ├── patterns/            # Reusable patterns for multi-agent engineering
 ├── compositions/        # How patterns combine into workflows
 ├── examples/            # Minimal neutral examples
