@@ -23,6 +23,8 @@ OpenCode is a **primary development agent** in a multi-harness setup:
 
 ## Important boundaries
 
+The [OpenCode routing bundle's agent interaction diagram](https://github.com/Prev-I/agentic-dev-toolkit/blob/main/models/routing/opencode/README.md#agent-interaction) illustrates a concrete controller, delegated workers, independent review, advisory escalation, and runtime services. The model assignments and version-specific behavior remain documented with the bundle, avoiding a second routing map in this tool assessment. The diagram describes intended policy interactions, not measured delegation frequency.
+
 - Model and variant availability depends on the provider and the user's access. A configuration that routes to a specific model will fail if that model is not available.
 - OpenCode does not enforce workflow by itself. Discipline comes from instruction files (`AGENTS.md`), skills (Superpowers or custom), and agent permission boundaries — not from the tool's default behavior.
 - The `instructions` field in `opencode.json` loads policy files that are prepended to the system prompt alongside `AGENTS.md`. This is a powerful mechanism for injecting constraints but is easy to overlook.
