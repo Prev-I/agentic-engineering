@@ -21,6 +21,8 @@ Claude Code is a **development agent** in a multi-harness setup:
 - MCP server configuration lives in `.mcp.json`, which is a different format from what Codex (`.codex/config.toml`) and OpenCode (`opencode.json`) use.
 - Skills live under `.claude/skills/` and are not interchangeable with OpenCode's `.opencode/skills/` or Codex's `.agents/skills/` without adaptation.
 - `.claude/settings.json` controls which MCP servers are enabled and must be updated when adding new servers.
+- Remote Control (`claude remote-control`) requires the first-party API endpoint and a claude.ai login, so it does not run when `ANTHROPIC_BASE_URL` points elsewhere or an API key or auth token replaces the login. The `env` block of `.claude/settings.local.json` counts as much as the shell — a local proxy wrapper that records its loopback address there can block Remote Control in that one project (Claude Code 2.1.296).
+- The first Remote Control run in a directory is interactive: it asks to enable Remote Control and to trust the workspace. A headless start before both answers exits with `Workspace not trusted`, so a supervised, always-on server needs one manual run in each project first.
 
 ## What did we learn?
 
